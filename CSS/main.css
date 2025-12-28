@@ -1,0 +1,640 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+h1, h2, h3 {
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: lighter;
+  
+}
+
+h2 {
+  font-weight: bold;
+}
+
+.body_card_insta:hover {
+  transition: transform 0.3s ease, letter-spacing 0.3s ease;
+  transform: scale(1.05);
+}
+
+.body_card_yt:hover {
+  transition: transform 0.3s ease, letter-spacing 0.3s ease;
+  transform: scale(1.05);
+}
+
+.body_card_FL:hover {
+  opacity: 0.8;
+}
+
+.body_card_live:hover {
+  opacity: 0.8;
+}
+
+.body_card_logic:hover {
+  opacity: 0.8;
+}
+
+.body_card_ProTools:hover {
+  opacity: 0.8;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h3:hover {
+  opacity: 0.7;
+}
+
+.h_link { 
+  padding: 20px 8%;
+}
+
+.h_link:hover .dropdown {
+  display: flex;
+}
+
+.h_link:hover .dropdown_tools {
+  display: flex;
+}
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: rgb(4, 0, 0);
+    background-color: #0d0c0c;
+    padding-top: 110px; /* match the header height */
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* make sure it's on top of other content */
+    margin: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* optional nice shadow */
+    background-color: #0A0706;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0px;
+  }
+
+  .tabs {
+    display: flex;
+    width: 50%;
+    align-items: center;
+  }
+
+  .logo {
+    padding-left: 200%;
+  }
+
+  .h_icons {
+    display: flex;
+  }
+
+  .dropdown {
+    display: none;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100%; /* just below the tab */
+    left: 0;
+    background: #1b1514;
+    padding: 1rem;
+    margin-left: 40%;
+    margin-top: -2%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+    border-radius: 8px;
+    width: 700px;
+  }
+
+  .dropdown_tools {
+    display: none;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100%; /* just below the tab */
+    left: 0;
+    background: #1b1514;
+    padding: 1rem;
+    margin-left: 55%;
+    margin-top: -2%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+    border-radius: 8px;
+    width: 700px;
+  }
+
+  .card > p {
+    font-size: small;
+    font-weight: lighter;
+  }
+
+  .card > h3 {
+    color: #239CA0;
+  }
+
+  .card {
+    background: #0A0706;
+    margin: 5px;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    padding: 5px;
+    width: 320px;
+    height: 100px;
+  }
+
+  .card:hover {
+    transform: scale(1.01);
+  }
+
+  .body {
+    
+    flex-direction: column;
+    color: white;
+    background-color: rgb(4, 0, 0);
+    margin: 0;
+  }
+
+  .b_element {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background: rgb(4, 0, 0);
+    box-shadow: 0 2px 8px rgba(18, 18, 18, 0.05);
+    margin: 20px;
+  }
+
+  .b_element_vid {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    background: #F5F5F5;
+    box-shadow: 0 2px 8px rgba(18, 18, 18, 0.05);
+  }
+
+  .body_card_yt {
+    position: relative;
+    margin: 30px;
+    border-radius: 10px;
+    background: url("../Resources/images/young-man-enjoying-movie-night_23-2149307344.avif");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-size: 1000px;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    
+  }
+
+  .body_card_insta {
+    position: relative;
+    margin: 30px;
+    border-radius: 10px;
+    background-image: url("../Resources/images/portrait-young-man-using-laptop-while-sitting-sofa-home_1048944-14052773.jpeg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-size: 1000px;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    
+  }
+
+  .body_card_website {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: relative;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: 1000px;
+    padding: 5% 13%;
+  }
+
+  .website_info {
+    position: relative;
+    margin: 30px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: #239CA0;
+    font-size: 60px;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    font-weight: 900;
+  }
+
+  .webinfo_img {
+    max-width: 150%;
+  }
+
+  .body_card_FL {
+    position: relative;
+    margin: 30px;
+    border-radius: 10px;
+    background-image: url("../Resources/images/male-musician-home-playing-drums-mixing-with-laptop_23-2148847022.jpeg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-size: 1000px;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    
+  }
+
+  .body_card_live {
+    position: relative;
+    margin: 30px;
+    border-radius: 10px;
+    background-image: url("../Resources/images/sound-designer-recording-his-electronic-piano-notes-home-studio_482257-97859.jpeg");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    background-size: 1000px;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    
+  }
+
+  .body_card_logic {
+    
+    margin: 30px;
+    border-radius: 10px;
+    background-image: url("../Resources/images/side-view-musicians-working-studio_23-2150265051.jpeg");
+    background-size: 1000px;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    
+  }
+
+  .body_card_ProTools {
+    margin: 30px;
+    border-radius: 10px;
+    background-image: url("../Resources/images/digital-mixer-recording-studio-with-computer-recording-sounds-music_169016-3815.jpeg");
+    background-size: 1000px;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+  }
+
+  .body_card_yt.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .footer {
+    box-sizing: border-box;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0A0706;
+    z-index: 1000; /* make sure it's on top of other content */
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+    padding: 50px;
+  }
+
+  .footer-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px; /* Adds space on both sides */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+
+  .footer-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+
+  .ft_card {
+    background: #0A0706;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: 2rem auto 0 auto;
+  }
+
+  .ft_card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .subscribe-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .subscribe-form input[type="email"] {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    flex: 1 1 250px;
+    max-width: 400px;
+  }
+  
+  .subscribe-form button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #7E4A26;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #5f361c;
+  }
+
+  hr {
+    margin-top: 30px;
+  }
+
+  li > a:hover {
+    opacity: 0.6;
+  }
+
+  #copyright {
+    padding-left: 26%;
+  }
+
+  #ft_ATIST {
+    padding-left: 29%;
+  }
+
+
+  /* Base Mobile Styles */
+.mobile-header {
+  position: relative;
+  background: #0A0706;
+  z-index: 999;
+}
+
+.menu-toggle {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+  margin-top: 28px;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+}
+
+.mobile-nav {
+  display: none;
+  background: #0A0706;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 75vw; /* Covers about 3/4 of screen */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.mobile-nav a {
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.mobile-nav a:hover {
+  background: #0A0706;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3); /* semi-transparent black */
+  z-index: 999;
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .mobile-header {
+    display: block;
+  }
+
+  .header { /* Hide tabs */
+    display: none;
+  }
+
+  .video-background {
+    display: none;
+  }
+
+  .video-background2 {
+    position: relative;
+    width: 100%;
+    height: 70vh; /* or set your preferred height */
+    overflow: hidden;
+  }
+
+  .video-background2 video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    object-fit: cover;
+    filter: brightness(0.6); /* optional: darken for readability */
+  }
+
+  .video-background2 .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: left;
+    padding-left: 18%;
+    font-size: 45px;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    font-weight: 900;
+  }
+  
+  .b_element {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 1%;
+  } 
+  
+  .body_card_insta {
+    margin: 7% 1%;
+    width: 100%;
+    height: 300px;
+    padding: 2%;
+  }
+
+  .body_card_yt {
+    margin: 7% 1%;
+    width: 100%;
+    height: 300px;
+    padding: 2%;
+  }
+
+  .body_card_live {
+    margin: 7% 1%;
+    width: 100%;
+    height: 300px;
+    padding: 2%;
+  }
+
+  .body_card_FL {
+    margin: 7% 1%;
+    width: 100%;
+    height: 300px;
+    padding: 2%;
+  }
+
+  .body_card_logic {
+    margin: 7% 1%;
+    width: 100%;
+    height: 300px;
+    padding: 2%;
+  }
+
+  .body_card_ProTools {
+    margin: 7% 1%;
+    width: 100%;
+    height: 300px;
+    padding: 2%;
+  }
+
+  .body_card_website {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    border: 1px solid #F5F5F5;
+    margin: 1%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-size: 1000px;
+    padding: 1% 2%;
+  }
+
+  .website_info {
+    position: relative;
+    border: 1px solid #F5F5F5;
+    margin: 1%;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    color: #239CA0;
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    font-style: italic;
+    font-weight: 900;
+  }
+
+  .webinfo_img {
+    width: 100%;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #FFFFFF;
+    padding-top: 0;
+  }
+
+  .footer-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+  }
+
+  #copyright {
+    padding-left: 4%;
+  }
+
+  #ft_ATIST {
+    padding-left: 29%;
+  }
+
+  .mobile_hcontainer{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    position: sticky;
+    
+  }
+
+  .mobile_logo {
+    display: flex;
+    align-self: center;
+  }
+}
+
+@media (min-width: 769px) {
+    .mobile-header {
+    display: none;
+  }
+
+  .video-background2 {
+    display: none;
+  }
+}
