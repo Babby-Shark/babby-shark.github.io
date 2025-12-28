@@ -32,9 +32,8 @@
         </header>
         <div class="menu-overlay" id="menu-overlay"></div>
 
-        <?php include('partials/header.php'); ?>
         <script>
-        fetch('/partials/header.html')
+        fetch('../partials/header.html')
             .then(r => r.text())
             .then(html => {
                 document.getElementById('header').innerHTML = html;
@@ -203,7 +202,13 @@
             </div>
         </div>
 
-        <?php include('partials/footer.php'); ?>
+        <script>
+        fetch('../partials/footer.html')
+            .then(r => r.text())
+            .then(html => {
+                document.getElementById('footer').innerHTML = html;
+            });
+        </script>
 
     <script src="script.js"></script>
     </body>
